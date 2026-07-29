@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+nav > a {
+    text-decoration: none;
+}
+.Header
+{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 26px;
+    max-width:548px;
+    align-items: center;
+    width: 548px;
+}
+.Header>h1
+{
+    font-size: 25.35px;
+    font-weight: 950;
+}
+.Header>div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4D4D4D;
+    font-size: 16px;
+    font-weight: 600;
+    gap: 20px;
+}
+.Header > div > a {
+    color: #4D4D4D;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.Header > div > a:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    color: #161616;
+}
+.HomeContent
+{
+    padding: 0px 26px 0px 26px;
+}
+.HomeContent>div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.HomeBackground
+{
+    background-image: url("./images/homePagePhoto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 548px;
+    height: 385px;
+    color: white;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.HomeContent>button
+{
+    margin: 52px auto 0px auto;
+    width:495px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FF8C38;
+    padding: 12px 0px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.HomeFooter
+{
+    background-color: #252525;
+    color: #AAAAAA;
+    margin: 0;
+    text-align: center;
+    padding: 25px 0;
+    max-width:548px;
+    width: 548px;
+}
+.About>div
+{
+    padding:0px 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 548px;
+    max-width: 548px;
+    color: #161616;
+}
+.AboutHook
+{
+    font-size: 32px;
+    font-weight: bold;
+}
+.AboutParagraph
+{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.YellowBoxInAbout
+{
+    background-color: #FFCC8D;
+    border-radius: 5px;
+    padding: 32px 38px;
+    color: #161616;
+    margin-top: 55px;
+    margin-bottom: 53px;
+}
+.YellowBoxInAbout>p
+{
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.YellowBoxInAbout>button
+{
+    cursor: pointer;
+    background-color: #161616;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 12px 22px;
+}
