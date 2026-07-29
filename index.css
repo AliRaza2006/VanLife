@@ -7,7 +7,7 @@ html, body {
     padding: 0;
     font-family: 'Inter',sans-serif;
 }
-.root
+#root
 {
     display: flex;
     align-items: center;
