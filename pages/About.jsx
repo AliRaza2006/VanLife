@@ -1,6 +1,6 @@
 import Header from "../components/Header.jsx"
 import Footer from "../components/Footer.jsx"
-import AboutPagePhoto from "../images/AboutPagePhoto.png"
+import AboutPagePhoto from "../assets/images/AboutPagePhoto.png"
 export default function About()
 {
     return(
