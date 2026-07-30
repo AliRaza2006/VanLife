@@ -9,7 +9,6 @@ export default function Vans()
         .then((res)=>res.json())
         .then((data)=>SetVans(data.vans))
     },[])
-    console.log(vans)
     return(
         <div style={{display:"flex",justifyContent:"center"}}>
             <div className="VansPage">
