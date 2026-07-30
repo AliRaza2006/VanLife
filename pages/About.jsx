@@ -5,7 +5,6 @@ export default function About()
 {
     return(
         <>
-        <Header/>
         <div className="About">
             <img src={AboutPagePhoto} alt="A man sitting on a van."/>
             <div>
@@ -24,7 +23,6 @@ export default function About()
                 </div>
             </div>
         </div>
-        <Footer/>
         </>
     )
 }

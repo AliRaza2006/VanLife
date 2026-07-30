@@ -4,7 +4,6 @@ export default function Home()
 {
     return(
         <>
-            <Header/>
             <div className="HomeBackground">
                 <div className="HomeContent">
                     <h1>You got the travel plans, we got the travel vans.</h1>
@@ -12,7 +11,6 @@ export default function Home()
                     <button>Find your van</button> 
                 </div>
             </div>
-            <Footer/>
         </>
     )
 }
