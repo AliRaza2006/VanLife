@@ -16,7 +16,7 @@ export default function Van()
         <>
             <div className="VanWrapper">
                 <div className="Van">
-                    <Link to="../vans" className="BackToAllVans"><GoArrowLeft/>Back to all vans</Link>
+                    <Link to=".." relative="path" className="BackToAllVans"><GoArrowLeft/>Back to all vans</Link>
                     <img src={vanData.imageUrl} alt={vanData.name}/>
                     <div className="VanInfo-Type">
                         <p>{vanData.type.charAt(0).toUpperCase()+vanData.type.slice(1)}</p>

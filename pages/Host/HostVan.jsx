@@ -13,7 +13,7 @@ export default function HostVan()
 
     return van?(
         <>
-            <Link to="../vans" className="BackToAllVans"><GoArrowLeft/>Back to all vans</Link>
+            <Link to=".." relative="path" className="BackToAllVans"><GoArrowLeft/>Back to all vans</Link>
             <div className="HostVans">
             {
                 <div className="HostVanDetails">
