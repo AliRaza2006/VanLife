@@ -1,13 +1,17 @@
-import {Link} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 export default function Header()
 {
+    function currentlyClicked({isActive})
+    {
+        return isActive?"NavLinkClicked":""
+    }
     return(
-        <div className="Header">
-            <h1>#VANLIFE</h1>
+        <div className="Header" >
+            <NavLink to="/">#VANLIFE</NavLink>
             <div>
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/vans">Vans</Link>
+                <NavLink to="/about" className={currentlyClicked}>About</NavLink>
+                <NavLink to="/vans" className={currentlyClicked}>Vans</NavLink>
+                <NavLink to="/host" className={currentlyClicked}>Host</NavLink>
             </div>
         </div>
     )

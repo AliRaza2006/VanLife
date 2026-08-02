@@ -10,8 +10,7 @@ export default function Vans()
         .then((data)=>SetVans(data.vans))
     },[])
     return(
-        <div style={{display:"flex",justifyContent:"center"}}>
-            <div className="VansPage">
+        <div className="VansPage" style={{display:"flex",justifyContent:"center"}}>
                 <h1>Explore our van options</h1>
                 <div className="filtersGrid">
                     <button>Simple</button>
@@ -22,7 +21,7 @@ export default function Vans()
                 <div className="VanCardsGrid">
                     {
                         vans.map((van)=>(
-                        <Link className="vanLink" key={van.id} to={`/van/${van.id}`}>
+                        <Link className="vanLink" key={van.id} to={`/vans/${van.id}`}>
                             <div className="vanCard" width="100%">
                                     <img src={van.imageUrl} alt={van.name} />
                                     <div className="VanInfo-VanPage">
@@ -38,7 +37,6 @@ export default function Vans()
                         </Link>
                         ))
                     }
-                </div>
             </div>
         </div>
     )

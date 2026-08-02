@@ -13,9 +13,6 @@ html, body {
     align-items: center;
     justify-content: center;
 }
-body::-webkit-scrollbar {
-  display: none;
-}
 nav > a {
     text-decoration: none;
 }
@@ -25,15 +22,17 @@ nav > a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 15px 26px;
+    padding: 15px 0;
     max-width:548px;
     align-items: center;
     width: 548px;
+    margin-bottom: 20px;
 }
-.Header>h1
+.Header>a
 {
-    font-size: 25.35px;
-    font-weight: 950;
+    font-size: 25.35px !important;
+    font-weight: 950 !important;
+    color: #000 !important;
 }
 .Header>div
 {
@@ -45,13 +44,15 @@ nav > a {
     font-weight: 600;
     gap: 20px;
 }
-.Header > div > a {
+.Header > div > a,
+.Header>a {
     color: #4D4D4D;
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
 }
-.Header > div > a:hover {
+.Header > div > a:hover
+{
     text-decoration: underline;
     text-underline-offset: 6px;
     color: #161616;
@@ -59,13 +60,6 @@ nav > a {
 .HomeContent
 {
     padding: 0px 26px 0px 26px;
-}
-.HomeContent>div
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
 }
 .HomeBackground
 {
@@ -184,6 +178,7 @@ nav > a {
     justify-items: center;
     margin-bottom: 85px;
     margin-top: 0;
+    width: 100%;
 }
 .filtersGrid
 {
@@ -289,4 +284,281 @@ nav > a {
     border: none;
     border-radius: 5px;
     margin-bottom: 85px;
+}
+.HostLayout > a {
+    color: #4D4D4D;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.HostLayout > a:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    color: #161616;
+}
+.HostLayout
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 45px;
+}
+.HostDashboardWelcome
+{
+    background-color: #FFEAD0;
+    color: #161616;
+    margin-bottom: 0;
+}
+.HostDashboardWelcome>div
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.HostDashboardWelcome>div>p>span
+{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-weight: bold;
+}
+.HostDashboardWelcome>div>p
+{
+    color: #4D4D4D;
+}
+.HostDashboardWelcome>h1
+{
+    font-size: 48px;
+    font-weight: bolder;
+    line-height: 38px;
+}
+.HostDashboardWelcome>h2
+{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 22px;
+}
+.HostDashboardWelcome>h2,
+.HostDashboardWelcome>h1,
+.HostDashboardWelcome>div
+{
+    margin:0;
+}
+.HostDashboardWelcome
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 35px 25px;
+    border-radius: 5px;
+}
+.HostDashboardReview
+{
+    background-color: #FFDDB2;
+    color: #161616;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 25px;
+}
+.HostDashboardReview p
+{
+    margin: 0;
+}
+.HostDashboardReview>div>p>svg
+{
+    border-radius: 1.09px;
+    width: 25px;
+    height: 24px;
+    color: #FF8C38;
+}
+.HostDashboardReview>div>p
+{
+    display: flex;
+    align-items: center;
+}
+.DashboardReviewScore
+{
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+.ListedVansHeadingDashboard
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ListedVansHeadingDashboard>h2
+{
+    font-size: 24px;
+    font-weight: bolder;
+}
+.DashboardVansbox>div>div>img,
+.HostVansbox>a>div>img
+{
+    width: 65px;
+    border-radius: 5px;
+}
+.DashboardVansbox>div,
+.HostVansbox>a
+{
+    display: flex;
+    align-items: center;
+}
+.DashboardVansbox>div>div,
+.HostVansbox>a>div
+{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+.DashboardVansbox>div>div>div>p,
+.DashboardVansbox>div>div>div>h3,
+.HostVansbox>a>div>div>p,
+.HostVansbox>a>div>div>h3
+{
+    margin: 0;
+}
+.DashboardVansbox>div>div>div>p,
+.HostVansbox>a>div>div>p
+{
+    color: #4D4D4D;
+}
+.DashboardVansbox>div,
+.HostVansbox>a
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.DashboardVansbox,
+.HostVansbox
+{
+    padding-left:  25px;
+    padding-right: 25px;
+}
+.HostVansbox>a
+{
+    color: inherit;
+    text-decoration: none;
+}
+.starReviewHost
+{
+    border-radius: 1.09px;
+    width: 25px;
+    height: 24px;
+    color:#FF8C38;
+}
+.ReviewsHeading
+{
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+}
+.ReviewsHeading>h1,
+.ReviewsHeading>p
+{
+    margin: 0;
+}
+.ReviewsHeading>p
+{
+    color: #4D4D4D;
+}
+.overAllRatingReview
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.overAllRatingReview>p
+{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.RatingPercentageReviews
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.RatingPercentageReviews>div
+{
+    width: 70%;
+    border: 1px solid black;
+    height: 8px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.RatingPercentageReviews>div>div
+{
+    background-color: #FF8C38;
+    height: 100%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.ReviewsBox
+{
+    padding: 10px;
+}
+.ReviewsBox>div>hr
+{
+    margin-top: 25px;
+}
+.ReviewsBox
+{
+    margin-bottom: 60px;
+}
+.TransactionsIncome-head
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.TransactionsIncome
+{
+    padding:0 10px;
+}
+.TransactionsIncome-transactions>div
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.TransactionsIncome-transactions
+{
+    padding: 0 15px;
+}
+.NavLinkClicked
+{
+    font-weight: bold !important;
+    text-decoration: underline !important;
+    color: #161616 !important;
+    text-underline-offset: 5px;
+}
+.HostVanDetails
+{
+    display: flex;
+    align-items: center;
+    gap:20px
+}
+.HostVanDetails>div>*
+{
+    margin: 0;
+}
+.HostVanDetails>div>h1
+{
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.HostVanDetails>div>p>span
+{
+    font-weight: bold;
+    font-size: 20px;
 }
