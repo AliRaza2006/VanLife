@@ -9,10 +9,10 @@ export default function HostLayout()
     return(
         <>
             <div className="HostLayout">
-                <NavLink to="/host" className={currentlyClicked} end>Dashboard</NavLink>
-                <NavLink to="/host/income" className={currentlyClicked}>Income</NavLink>
-                <NavLink to="/host/vans" className={currentlyClicked}>Vans</NavLink>
-                <NavLink to="/host/reviews" className={currentlyClicked}>Reviews</NavLink>
+                <NavLink to="." className={currentlyClicked} end>Dashboard</NavLink>
+                <NavLink to="income" className={currentlyClicked}>Income</NavLink>
+                <NavLink to="vans" className={currentlyClicked}>Vans</NavLink>
+                <NavLink to="reviews" className={currentlyClicked}>Reviews</NavLink>
             </div>
             <Outlet/>
         </>

@@ -7,11 +7,11 @@ export default function Header()
     }
     return(
         <div className="Header" >
-            <NavLink to="/">#VANLIFE</NavLink>
+            <NavLink to=".">#VANLIFE</NavLink>
             <div>
-                <NavLink to="/about" className={currentlyClicked}>About</NavLink>
-                <NavLink to="/vans" className={currentlyClicked}>Vans</NavLink>
-                <NavLink to="/host" className={currentlyClicked}>Host</NavLink>
+                <NavLink to="about" className={currentlyClicked}>About</NavLink>
+                <NavLink to="vans" className={currentlyClicked}>Vans</NavLink>
+                <NavLink to="host" className={currentlyClicked}>Host</NavLink>
             </div>
         </div>
     )
