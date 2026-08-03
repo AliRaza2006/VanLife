@@ -33,7 +33,7 @@ export default function Dashboard()
                 <div className="DashboardVansbox">
                     {
                         vans.map((van)=>(
-                            <div>
+                            <div key={van.id}>
                                 <div>
                                     <img src={van.imageUrl} alt={van.name}/>
                                     <div>

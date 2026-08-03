@@ -40,7 +40,7 @@ export default function Reviews()
                 [...Array(5)].map((_,i)=>{
                     let count=reviews.filter((review)=>(review.rating===5-i)).length
                     return(
-                        <div className="RatingPercentageReviews">
+                        <div key={i} className="RatingPercentageReviews">
                             <p>{5-i} stars</p>
                             <div>
                                 <div style={{width:`${(count/reviews.length)*100}%`}}></div>
@@ -55,11 +55,11 @@ export default function Reviews()
                 <div>
                 {
                     reviews.map((review)=>(
-                        <div className="ReviewsBox">
+                        <div key={review.id} className="ReviewsBox">
                         {    [...Array(5)].map((_,i)=>(
                                 i<review.rating?
-                                <GoStarFill className="starReviewHost"/>:
-                                <GoStar style={{width: "25px",height: "24px"}}/>
+                                <GoStarFill key={i} className="starReviewHost"/>:
+                                <GoStar key={i} style={{width: "25px",height: "24px"}}/>
                             ))
                         }
                             <div>

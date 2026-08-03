@@ -52,8 +52,8 @@ export default function Income()
                 </div>
                 <div className="TransactionsIncome-transactions">
                     {
-                        Transactions.map((trans)=>(
-                            <div>
+                        Transactions.map((trans,i)=>(
+                            <div key={i}>
                                 <h1>${trans.amount}</h1>
                                 <p>{trans.date}</p>
                             </div>
